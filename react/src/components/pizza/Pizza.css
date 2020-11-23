@@ -1,0 +1,61 @@
+#fuente {
+  position: absolute;
+  top: 10px;
+}
+.plate {
+  width: 600px;
+  height: 600px;
+  border-radius: 500px;
+  background: #4a1804;
+  position: relative;
+  left: 0px;
+}
+.bite-circle-1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #4a1804;
+  position: absolute;
+  top: 160px;
+  left: 350px;
+}
+.bite-circle-2 {
+  width: 180px;
+  height: 150px;
+  border-radius: 50%;
+  background: #4a1804;
+  position: absolute;
+  top: 180px;
+  left: 340px;
+  z-index: 2;
+}
+.bite-circle-3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #4a1804;
+  position: absolute;
+  top: 280px;
+  left: 450px;
+  z-index: 2;
+}
+.handle {
+  width: 300px;
+  height: 80px;
+  background: #4a1804;
+  border-radius: 50px;
+  position: absolute;
+  top: 540px;
+  left: 460px;
+  transform: rotate(40deg);
+  z-index: -1;
+}
+.handle-hole {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: white;
+  position: absolute;
+  top: 620px;
+  left: 660px;
+}
