@@ -9,7 +9,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-
+using Newtonsoft.Json.Linq;
 
 namespace BellaAPIs.Function
 {
@@ -69,8 +69,14 @@ namespace BellaAPIs.Function
 
             // Display the JSON result from LUIS.
             Console.WriteLine(strResponseContent.ToString());
+           
+            var jsonContent = JObject.Parse(strResponseContent);
+            string responseIntent = jsonContent.SelectToken("$.prediction.topIntent").Value<string>();
 
-            return new OkObjectResult(strResponseContent.ToString());
+            // Display topIntent
+            Console.WriteLine(jsonContent.SelectToken("$.prediction.topIntent").Value<string>());
+
+            return new OkObjectResult(responseIntent);
         }
     }
 }
