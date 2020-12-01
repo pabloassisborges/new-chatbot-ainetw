@@ -65,13 +65,13 @@ namespace BellaAPIs.Function
 
             var response = await client.GetAsync(predictionEndpointUri);
 
-            var strResponseContent = await response.Content.ReadAsStringAsync();
+            var strResponseContent = await response.Content.ReadAsStringAsync(); //Read string
 
             // Display the JSON result from LUIS.
             Console.WriteLine(strResponseContent.ToString());
            
-            var jsonContent = JObject.Parse(strResponseContent);
-            string responseIntent = jsonContent.SelectToken("$.prediction.topIntent").Value<string>();
+            var jsonContent = JObject.Parse(strResponseContent); //convert json
+            string responseIntent = jsonContent.SelectToken("$.prediction.topIntent").Value<string>(); //select field
 
             // Display topIntent
             Console.WriteLine(jsonContent.SelectToken("$.prediction.topIntent").Value<string>());
