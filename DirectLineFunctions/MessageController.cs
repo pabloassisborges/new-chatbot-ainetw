@@ -25,9 +25,14 @@ namespace BellaAPIs.Function
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             userMessage = userMessage ?? data?.userMessage;
 
-            //call function: Intent
-            // intent == "None"
-            // retryResponse
+            //call function: IntentLUIS
+            // if (intent == "None")
+            //      responseMessage = retryResponse;
+            // else{
+            //      call function SelectAnswerSQL
+            //      responseMessage == answerMessage;
+            //}
+            //     
             string responseMessage = string.IsNullOrEmpty(userMessage)
                 ? "Echo bot: Empty message! Please enter anything."
                 : $"Echo bot: {userMessage}";
