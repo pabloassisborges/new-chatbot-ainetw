@@ -1,0 +1,4 @@
+C:\Users\beatr\OneDrive\Documentos\AI Networks\GitProjects\MVP-Bella\DirectLineFunctions\obj\Debug\netcoreapp3.1\DirectLineFunctions.csprojAssemblyReference.cache
+C:\Users\beatr\OneDrive\Documentos\AI Networks\GitProjects\MVP-Bella\DirectLineFunctions\obj\Debug\netcoreapp3.1\DirectLineFunctions.AssemblyInfoInputs.cache
+C:\Users\beatr\OneDrive\Documentos\AI Networks\GitProjects\MVP-Bella\DirectLineFunctions\obj\Debug\netcoreapp3.1\DirectLineFunctions.AssemblyInfo.cs
+C:\Users\beatr\OneDrive\Documentos\AI Networks\GitProjects\MVP-Bella\DirectLineFunctions\obj\Debug\netcoreapp3.1\DirectLineFunctions.csproj.CoreCompileInputs.cache
